@@ -35,8 +35,13 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
-
+import ml from './ml.png'
+import ps from './ps.png'
+import be from './be.png'
 export const assets = {
+    ml,
+    ps,
+    be,
     user_image,
     code_icon,
     code_icon_dark,
@@ -100,10 +105,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: 'https://github.com/MohamedAmr23/social-media-website' },
+    { icon: assets.ml, title: 'Machine Learning', description: ' developing, and deploying artificial intelligence (AI) and machine learning models into production-level software applications', link: 'https://github.com/MohamedAmr23/Car-Prediction-' },
+    { icon: assets.ps, title: 'Problem Solver', description: 'Solved more than 400 problem in a different platforms such as codewars,leetcode and codeforce', link: 'https://github.com/MohamedAmr23/Codewars-Kata8-Solutions-Javascript' },
+    { icon: assets.be, title: 'Backend developer', description: ' professional responsible for designing, developing, and maintaining server-side applications using Node.js', link: 'https://github.com/MohamedAmr23/Full-Stack-e-commerce-website' },
 ]
 
 export const infoList = [

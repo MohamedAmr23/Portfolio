@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Header from "./components/Header.jsx";
 import About from "./components/About.jsx";
 import Services from "./components/Services.jsx";
+import Work from "./components/Work.jsx";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header/>
       <About/>
       <Services/>
+      <Work/>
     </Fragment>
   );
 }

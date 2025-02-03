@@ -38,10 +38,12 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import ml from './ml.png'
 import ps from './ps.png'
 import be from './be.png'
+import contactFooter from '../assets/public/footer-bg-color.png'
 export const assets = {
     ml,
     ps,
     be,
+    contactFooter,
     user_image,
     code_icon,
     code_icon_dark,

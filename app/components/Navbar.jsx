@@ -28,7 +28,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             className="cursor-pointer w-28 mr-14"
           />{" "}
         </a>
-        <ul className={`hidden sm:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll?'':'bg-white bg-opacity-50 shadow-sm'}`}>
+        <ul className={`hidden sm:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll?'':'bg-white bg-opacity-50 shadow-sm dark:border dark:border-white/50 dark:bg-transparent'}`}>
           <li>
             <a href="#top" className="font-Ovo">
               Home
@@ -59,19 +59,19 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
           <button onClick={()=>setIsDarkMode(prev=>!prev)}><Image src={isDarkMode?assets.sun_icon:assets.moon_icon} alt="" className="w-6"/></button>
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo"
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
           >
             Contact
-            <Image src={assets.arrow_icon} alt="" className="w-3" />
+            <Image src={isDarkMode?assets.arrow_icon_dark:assets.arrow_icon} alt="" className="w-3" />
           </a>
-          <button onClick={()=>setOpen(!open)} className="block sm:hidden ml-3"><Image src={assets.menu_black} alt="" className="w-6"/></button>
+          <button onClick={()=>setOpen(!open)} className="block sm:hidden ml-3"><Image src={isDarkMode?assets.menu_white:assets.menu_black} alt="" className="w-6"/></button>
         </div>
 
 
           {/* mobile menu */}
-          {open && <ul className={`flex md:hidden flex-col gap-4 py-20 px-10 fixed ${open ? 'right-0':'-right-64'} top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-1000`}>
+          {open && <ul className={`flex md:hidden flex-col gap-4 py-20 px-10 fixed ${open ? 'right-0':'-right-64'} top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-1000 dark:bg-darkHover`}>
             <div className="absolute top-6 right-6" onClick={()=>setOpen(false)}>
-              <Image  src={assets.close_black} alt="" className="w-5 cursor-pointer"/>
+              <Image  src={isDarkMode?assets.close_white:assets.close_black} alt="" className="w-5 cursor-pointer"/>
             </div>
           <li onClick={()=>setOpen(false)}>
             <a href="#top" className="font-Ovo">

@@ -90,18 +90,18 @@ export const workData = [
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Social media ',
+        description: 'Web Design',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Feedback Analysis',
+        description: 'Deep Learning',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'sarahah',
+        description: 'Backend',
         bgImage: '/work-4.png',
     },
 ]
